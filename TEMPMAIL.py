@@ -63,10 +63,10 @@ def escape_markdown_v2(text: str) -> str:
 # Start command to welcome users
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "🤖 Welcome! Bot Made By - [@Shreyansh](https://t.me/SmartEdith_Bot)\n"
+        '🤖 Welcome! Bot Made By - <a href="https://t.me/SmartEdith_Bot">Shreyansh</a>\n'
         "📄 Only Gmails Are Supported\n"
         "📝 Please Enter Your Gmail Address.",
-        parse_mode="MarkdownV2"
+        parse_mode="HTML"
     )
     return GMAIL  # Move to the next step
 
