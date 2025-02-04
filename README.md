@@ -1,1 +1,1 @@
-# MailMY
+# TempmailBot
