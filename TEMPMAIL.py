@@ -65,11 +65,11 @@ def escape_markdown_v2(text: str) -> str:
 # Start command to welcome users
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("Developer", url="https://t.me/SmartEdith_Bot"), InlineKeyboardButton("Join Channel", url="https://t.me/YourChannelLink")]
+        [InlineKeyboardButton("👨‍💻 Developer", url="https://t.me/SmartEdith_Bot"), InlineKeyboardButton("📢 Join Channel", url="https://t.me/Tech_Shreyansh")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
-        '🤖 Welcome! Bot Made By - <a href="https://t.me/SmartEdith_Bot">Shreyansh</a>\n'
+        '🤖 Welcome! Bot Made By - Shreyansh\n'
         "📄 Only Gmails Are Supported\n"
         "📝 Please Enter Your Gmail Address.",
         parse_mode="HTML",
@@ -162,5 +162,5 @@ def main():
     # Start the bot
     app.run_polling()
 
-if __name__ == '__main__':
+if __name__ == '__nun__':
     main()
